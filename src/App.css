@@ -44,6 +44,37 @@ body {
     font-size: 2em;
 }
 
+.value_input{
+    border: blueviolet 1px solid;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 2em;
+}
+.max_value{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: blueviolet 1px solid;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 2em;
+}
+
+.start_value{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: blueviolet 1px solid;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 2em;
+}
+
+
 .btn_inc {
     grid-column-start: 1;
     grid-column-end: 2;

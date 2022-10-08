@@ -2,8 +2,8 @@ import React from 'react';
 
 const MaxValue = () => {
     return (
-        <div>
-            <input type="number"/>
+        <div className={'max_value'}>
+           max value <input type="number"/>
         </div>
     );
 };

@@ -2,8 +2,8 @@ import React from 'react';
 
 const StartValue = () => {
     return (
-        <div>
-            <input type="number"/> 
+        <div className={'start_value'}>
+           start value <input type="number"/>
         </div>
     );
 };

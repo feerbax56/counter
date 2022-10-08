@@ -23,8 +23,10 @@ function App() {
     return (
         <div className={'tablo'}>
             <div className={'setter'}>
-                <MaxValue/>
-                <StartValue/>
+                <div className={'value_input'}>
+                    <MaxValue/>
+                    <StartValue/>
+                </div>
                 <Set/>
             </div>
 
