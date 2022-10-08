@@ -1,26 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Monitor from './Monitor';
+import Incorporated from './Incorporated';
+import Reset from './Reset';
+import Set from './Set'
+import MaxValue from './MaxValue';
+import StartValue from './StartValue';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    let [counter, setCounter] = useState(0)
+
+    const addCount = () => {
+        setCounter(counter + 1)
+    }
+
+    const resetCount = () => {
+        setCounter(0)
+    }
+
+    return (
+        <div className={'tablo'}>
+            <div className={'setter'}>
+                <MaxValue/>
+                <StartValue/>
+                <Set/>
+            </div>
+
+            <div className={'counter'}>
+                <Monitor counter={counter}/>
+                <Incorporated addCount={addCount}
+                              counter={counter}
+                />
+                <Reset resetCount={resetCount}
+                       counter={counter}
+                />
+            </div>
+        </div>
+
+    );
 }
 
 export default App;

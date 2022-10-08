@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+body {
+    background-color: blueviolet;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tablo{
+    display: flex;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.counter {
+    margin: 100px 20px;
+    background-color: #378b8d;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.setter{
+    margin: 100px 20px;
+    background-color: #1c9da1;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
-.App-link {
-  color: #61dafb;
+.monitor {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: blueviolet 1px solid;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn_inc {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: blueviolet 1px solid;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+
+.btn_reset {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: blueviolet 1px solid;
+    border-radius: 5px;
+    margin: 5px;
+
+}
+
+.red_text {
+    color: red;
+}
+
+.btn_set {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: blueviolet 1px solid;
+    border-radius: 5px;
+    margin: 5px;
+
 }
