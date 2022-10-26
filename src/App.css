@@ -1,5 +1,6 @@
 body {
     background-color: blueviolet;
+
 }
 
 .tablo{
@@ -48,7 +49,7 @@ body {
     border: blueviolet 1px solid;
     border-radius: 5px;
     margin: 5px;
-    font-size: 2em;
+
 }
 .max_value{
     grid-row-start: 1;
@@ -59,7 +60,12 @@ body {
     border: blueviolet 1px solid;
     border-radius: 5px;
     margin: 5px;
-    font-size: 2em;
+    font-size: 1.2em;
+
+}
+.max_value input{
+    width: 50px;
+    margin-left: 10px;
 }
 
 .start_value{
@@ -71,7 +77,12 @@ body {
     border: blueviolet 1px solid;
     border-radius: 5px;
     margin: 5px;
-    font-size: 2em;
+    font-size: 1.2em;
+}
+
+.start_value input{
+    width: 50px;
+    margin-left: 10px;
 }
 
 
@@ -108,7 +119,7 @@ body {
 }
 
 .btn_set {
-    grid-row-start: 3;
+    grid-row-start: 2;
     grid-row-end: 4;
     display: flex;
     align-items: center;
