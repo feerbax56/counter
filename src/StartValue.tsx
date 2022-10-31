@@ -1,9 +1,18 @@
 import React from 'react';
 
-const StartValue = () => {
+
+type StartValueProps = {
+    startValue: number
+}
+
+
+const StartValue: React.FC<StartValueProps> = (props) => {
     return (
         <div className={'start_value'}>
-           start value <input type="number"/>
+           start value
+            <input
+                value={props.startValue}
+                type="number"/>
         </div>
     );
 };

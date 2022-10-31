@@ -12,6 +12,12 @@ function App() {
 
     let [counter, setCounter] = useState(0)
 
+    let setup = {
+        max: 0,
+        start: 0
+
+    }
+
     const addCount = () => {
         setCounter(counter + 1)
     }
@@ -24,8 +30,12 @@ function App() {
         <div className={'tablo'}>
             <div className={'setter'}>
                 <div className={'value_input'}>
-                    <MaxValue/>
-                    <StartValue/>
+                    <MaxValue
+                        maxValue={setup.max}
+                    />
+                    <StartValue
+                        startValue={setup.start}
+                    />
                 </div>
                 <Set/>
             </div>
